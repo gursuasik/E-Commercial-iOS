@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EpM-Zj-VP5">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham-Light.otf">
+            <string>Gotham-Light</string>
+        </array>
+        <array key="Gotham.otf">
+            <string>Gotham</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="N6Z-e3-ybm">
+            <objects>
+                <viewController storyboardIdentifier="loginId" id="EpM-Zj-VP5" customClass="LoginViewController" customModule="Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ydS-K5-ldF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJR-gw-DJc" customClass="LoginTextField" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="67" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dU3-ua-pF4"/>
+                                </constraints>
+                                <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-AI-rpS">
+                                <rect key="frame" x="30" y="265" width="260" height="50"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X4H-v5-mwD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                                <state key="normal" title="GİRİŞ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="EpM-Zj-VP5" eventType="touchUpInside" id="pQd-Mo-I9i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neG-uX-V70">
+                                <rect key="frame" x="30" y="344" width="260" height="20"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="FtN-t0-IZs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                                <state key="normal" title="Şifremi Unuttum">
+                                    <color key="titleColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD7-87-omI">
+                                <rect key="frame" x="30" y="389" width="260" height="50"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.34901960784313724" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jYI-Na-sza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                                <state key="normal" title="FACEBOOK İLE BAĞLAN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdz-HY-9Ip">
+                                <rect key="frame" x="30" y="469" width="260" height="50"/>
+                                <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vrm-yq-5gc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                                <state key="normal" title="YENİ ÜYELİK OLUŞTUR">
+                                    <color key="titleColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5iv-Oh-w8c" kind="show" id="nDS-2e-l0I"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gll-dT-PEW" customClass="LoginTextField" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="163" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tEp-s6-7Hu"/>
+                                </constraints>
+                                <color key="textColor" red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDT-xG-xRe">
+                                <rect key="frame" x="30" y="163" width="33" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Posta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YX-PX-oTb">
+                                <rect key="frame" x="30" y="67" width="55" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="14"/>
+                                <color key="textColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AJR-gw-DJc" firstAttribute="leading" secondItem="5YX-PX-oTb" secondAttribute="leading" id="0fK-Nc-WOe"/>
+                            <constraint firstItem="Kdz-HY-9Ip" firstAttribute="leading" secondItem="0Ek-14-jdD" secondAttribute="leading" constant="30" id="3dM-fn-3qo"/>
+                            <constraint firstItem="e3d-AI-rpS" firstAttribute="top" secondItem="gll-dT-PEW" secondAttribute="bottom" constant="52" id="45n-30-G6R"/>
+                            <constraint firstItem="xD7-87-omI" firstAttribute="top" secondItem="neG-uX-V70" secondAttribute="bottom" constant="25" id="ACe-Fd-ncd"/>
+                            <constraint firstItem="0Ek-14-jdD" firstAttribute="trailing" secondItem="Kdz-HY-9Ip" secondAttribute="trailing" constant="30" id="Dz7-St-Sfg"/>
+                            <constraint firstItem="AJR-gw-DJc" firstAttribute="leading" secondItem="0Ek-14-jdD" secondAttribute="leading" constant="30" id="Fjp-YL-0nP"/>
+                            <constraint firstItem="xD7-87-omI" firstAttribute="leading" secondItem="0Ek-14-jdD" secondAttribute="leading" constant="30" id="M1i-k2-xRE"/>
+                            <constraint firstItem="gll-dT-PEW" firstAttribute="leading" secondItem="DDT-xG-xRe" secondAttribute="leading" id="MN9-em-ltP"/>
+                            <constraint firstItem="0Ek-14-jdD" firstAttribute="trailing" secondItem="e3d-AI-rpS" secondAttribute="trailing" constant="30" id="Mey-WS-kwJ"/>
+                            <constraint firstItem="0Ek-14-jdD" firstAttribute="trailing" secondItem="gll-dT-PEW" secondAttribute="trailing" constant="30" id="UWh-Jw-cSo"/>
+                            <constraint firstItem="neG-uX-V70" firstAttribute="top" secondItem="e3d-AI-rpS" secondAttribute="bottom" constant="29" id="X0K-d5-3pw"/>
+                            <constraint firstItem="Kdz-HY-9Ip" firstAttribute="top" secondItem="xD7-87-omI" secondAttribute="bottom" constant="30" id="ZEZ-4p-Iqa"/>
+                            <constraint firstItem="e3d-AI-rpS" firstAttribute="leading" secondItem="0Ek-14-jdD" secondAttribute="leading" constant="30" id="aGm-aq-3fF"/>
+                            <constraint firstItem="gll-dT-PEW" firstAttribute="leading" secondItem="0Ek-14-jdD" secondAttribute="leading" constant="30" id="cKV-0g-hPO"/>
+                            <constraint firstItem="neG-uX-V70" firstAttribute="leading" secondItem="0Ek-14-jdD" secondAttribute="leading" constant="30" id="cND-cV-vNH"/>
+                            <constraint firstItem="AJR-gw-DJc" firstAttribute="top" secondItem="0Ek-14-jdD" secondAttribute="top" constant="47" id="elf-uc-bY3"/>
+                            <constraint firstItem="gll-dT-PEW" firstAttribute="top" secondItem="AJR-gw-DJc" secondAttribute="bottom" constant="46" id="gQ6-fs-Kwd"/>
+                            <constraint firstItem="0Ek-14-jdD" firstAttribute="trailing" secondItem="AJR-gw-DJc" secondAttribute="trailing" constant="30" id="rJ2-sc-W9t"/>
+                            <constraint firstItem="0Ek-14-jdD" firstAttribute="trailing" secondItem="neG-uX-V70" secondAttribute="trailing" constant="30" id="teT-u8-9Wa"/>
+                            <constraint firstItem="0Ek-14-jdD" firstAttribute="trailing" secondItem="xD7-87-omI" secondAttribute="trailing" constant="30" id="ujb-9c-hoF"/>
+                            <constraint firstItem="AJR-gw-DJc" firstAttribute="top" secondItem="5YX-PX-oTb" secondAttribute="top" id="vqb-th-iQJ"/>
+                            <constraint firstItem="gll-dT-PEW" firstAttribute="top" secondItem="DDT-xG-xRe" secondAttribute="top" id="ye4-hu-Dae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Ek-14-jdD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HzP-Ay-lCT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="G7o-T8-s94">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="close:" destination="EpM-Zj-VP5" id="yQ9-qQ-WIt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="email" destination="AJR-gw-DJc" id="yrV-bJ-ZSB"/>
+                        <outlet property="password" destination="gll-dT-PEW" id="lje-Tf-f7e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00r-bp-FV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517.5" y="143.66197183098592"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="9tg-fe-09D">
+            <objects>
+                <viewController id="5iv-Oh-w8c" customClass="SignupViewController" customModule="Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5oG-5U-f20">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ndP-jc-hkh" customClass="LoginTextField" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="40" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CqH-td-3KJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snz-Kd-Z1O">
+                                <rect key="frame" x="30" y="40" width="24.5" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9d-Fa-b4W" customClass="LoginTextField" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="105" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7FR-Jw-Dzx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soyadı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foz-XP-Xkd">
+                                <rect key="frame" x="30" y="105" width="48" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BdI-tP-WX2" customClass="LoginTextField" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="170" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VEn-tD-vd2"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-posta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnB-lm-FuW">
+                                <rect key="frame" x="30" y="170" width="55" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uLX-JH-TmX" customClass="LoginTextField" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="235" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="k8o-5k-9uD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPO-IY-HQs">
+                                <rect key="frame" x="30" y="235" width="42" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ5-nL-DPQ" customClass="CheckButton" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="370" width="20" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="JfW-vb-b68"/>
+                                    <constraint firstAttribute="height" constant="30" id="SJs-hw-dn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerCircleCircleColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didPressButton:" destination="W0I-ny-U5K" eventType="touchUpInside" id="83i-8b-ghp"/>
+                                    <action selector="newsCheck:" destination="5iv-Oh-w8c" eventType="touchUpInside" id="4IB-Cf-OqJ"/>
+                                    <action selector="newsCheck:" destination="W0I-ny-U5K" eventType="touchUpInside" id="ZgQ-Ll-OY4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeniliklerden haberdar olmak istiyorum." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRV-B7-NP0">
+                                <rect key="frame" x="58" y="370" width="232" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="13"/>
+                                <color key="textColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgr-LS-Ni0" customClass="CheckButton" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="410" width="20" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="SM0-D9-F3S"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerCircleCircleColor">
+                                        <color key="value" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
+                                        <color key="value" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerCircleLineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="licenceAgrementCheck:" destination="5iv-Oh-w8c" eventType="touchUpInside" id="F9q-s7-kfv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gizlilik politikasını ve satış sözleşmesini kabul ediyorum." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOm-M4-1RD">
+                                <rect key="frame" x="58" y="403.5" width="232" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNP-TI-atg">
+                                <rect key="frame" x="30" y="447" width="260" height="50"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fYp-Di-6aJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <state key="normal" title="KAYIT OL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp:" destination="5iv-Oh-w8c" eventType="touchUpInside" id="4hH-jW-5mL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b0-Fh-xZz" customClass="DropDownButton" customModule="Master" customModuleProvider="target">
+                                <rect key="frame" x="30" y="300" width="260" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LdQ-PN-sB0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Light" family="Gotham" pointSize="14"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cinsiyet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1m6-vy-qm8">
+                                <rect key="frame" x="30" y="300" width="57" height="12.5"/>
+                                <fontDescription key="fontDescription" name="Gotham" family="Gotham" pointSize="14"/>
+                                <color key="textColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="BdI-tP-WX2" secondAttribute="trailing" constant="30" id="0PC-Pm-6gB"/>
+                            <constraint firstItem="cPO-IY-HQs" firstAttribute="top" secondItem="uLX-JH-TmX" secondAttribute="bottom" constant="-50" id="0vf-mS-wgJ"/>
+                            <constraint firstItem="Foz-XP-Xkd" firstAttribute="leading" secondItem="K9d-Fa-b4W" secondAttribute="leading" id="1Xm-VF-TTy"/>
+                            <constraint firstItem="JNP-TI-atg" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="1aU-sN-v6i"/>
+                            <constraint firstItem="jgr-LS-Ni0" firstAttribute="top" secondItem="nQ5-nL-DPQ" secondAttribute="bottom" constant="10" id="3Ih-ps-NnR"/>
+                            <constraint firstItem="LRV-B7-NP0" firstAttribute="top" secondItem="2b0-Fh-xZz" secondAttribute="bottom" constant="20" id="4tg-ok-88z"/>
+                            <constraint firstItem="BdI-tP-WX2" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="7iX-pS-j0g"/>
+                            <constraint firstItem="jgr-LS-Ni0" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="D8m-DK-jHD"/>
+                            <constraint firstItem="uLX-JH-TmX" firstAttribute="top" secondItem="BdI-tP-WX2" secondAttribute="bottom" constant="15" id="FSy-VE-bN1"/>
+                            <constraint firstItem="K9d-Fa-b4W" firstAttribute="top" secondItem="ndP-jc-hkh" secondAttribute="bottom" constant="15" id="Fvf-zY-FGd"/>
+                            <constraint firstItem="LRV-B7-NP0" firstAttribute="leading" secondItem="nQ5-nL-DPQ" secondAttribute="trailing" constant="8" id="GH1-cH-KsM"/>
+                            <constraint firstItem="ndP-jc-hkh" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="H7k-Cq-f4C"/>
+                            <constraint firstItem="nQ5-nL-DPQ" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="JKe-1q-LQz"/>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="JNP-TI-atg" secondAttribute="trailing" constant="30" id="KFK-rB-2yT"/>
+                            <constraint firstItem="JNP-TI-atg" firstAttribute="top" secondItem="UOm-M4-1RD" secondAttribute="bottom" constant="20" id="LHr-WB-Uw9"/>
+                            <constraint firstItem="ndP-jc-hkh" firstAttribute="top" secondItem="ZOu-VH-fDT" secondAttribute="top" constant="20" id="LwG-i6-gNR"/>
+                            <constraint firstItem="snz-Kd-Z1O" firstAttribute="top" secondItem="ndP-jc-hkh" secondAttribute="top" id="Nuv-Dj-WrQ"/>
+                            <constraint firstItem="snz-Kd-Z1O" firstAttribute="leading" secondItem="ndP-jc-hkh" secondAttribute="leading" id="R2F-Vh-9eb"/>
+                            <constraint firstItem="UOm-M4-1RD" firstAttribute="leading" secondItem="jgr-LS-Ni0" secondAttribute="trailing" constant="8" id="SHF-k2-rao"/>
+                            <constraint firstItem="BdI-tP-WX2" firstAttribute="leading" secondItem="qnB-lm-FuW" secondAttribute="leading" id="TMe-kY-Oht"/>
+                            <constraint firstItem="uLX-JH-TmX" firstAttribute="top" secondItem="cPO-IY-HQs" secondAttribute="top" id="VqB-tY-h7q"/>
+                            <constraint firstItem="UOm-M4-1RD" firstAttribute="top" secondItem="LRV-B7-NP0" secondAttribute="bottom" constant="10" id="Vv3-Uq-Jo8"/>
+                            <constraint firstItem="uLX-JH-TmX" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="Ym2-jp-FPM"/>
+                            <constraint firstItem="nQ5-nL-DPQ" firstAttribute="top" secondItem="2b0-Fh-xZz" secondAttribute="bottom" constant="20" id="Ymz-b5-hoH"/>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="UOm-M4-1RD" secondAttribute="trailing" constant="30" id="el2-lS-Q50"/>
+                            <constraint firstItem="1m6-vy-qm8" firstAttribute="top" secondItem="2b0-Fh-xZz" secondAttribute="top" id="gvS-UB-7AU"/>
+                            <constraint firstItem="BdI-tP-WX2" firstAttribute="top" secondItem="qnB-lm-FuW" secondAttribute="top" id="hXQ-qc-FWB"/>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="K9d-Fa-b4W" secondAttribute="trailing" constant="30" id="i1o-Ve-Xg5"/>
+                            <constraint firstItem="2b0-Fh-xZz" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="l2D-1x-Pmz"/>
+                            <constraint firstItem="1m6-vy-qm8" firstAttribute="leading" secondItem="2b0-Fh-xZz" secondAttribute="leading" id="lXn-ws-frn"/>
+                            <constraint firstItem="uLX-JH-TmX" firstAttribute="leading" secondItem="cPO-IY-HQs" secondAttribute="leading" id="naY-1u-4Xd"/>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="LRV-B7-NP0" secondAttribute="trailing" constant="30" id="o16-Xy-daW"/>
+                            <constraint firstItem="2b0-Fh-xZz" firstAttribute="top" secondItem="uLX-JH-TmX" secondAttribute="bottom" constant="15" id="odb-NZ-kZ8"/>
+                            <constraint firstItem="K9d-Fa-b4W" firstAttribute="leading" secondItem="ZOu-VH-fDT" secondAttribute="leading" constant="30" id="q45-ve-KEl"/>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="uLX-JH-TmX" secondAttribute="trailing" constant="30" id="xhl-Wm-G96"/>
+                            <constraint firstItem="BdI-tP-WX2" firstAttribute="top" secondItem="K9d-Fa-b4W" secondAttribute="bottom" constant="15" id="xvo-Z1-tBa"/>
+                            <constraint firstItem="Foz-XP-Xkd" firstAttribute="top" secondItem="K9d-Fa-b4W" secondAttribute="top" id="y6x-3L-Dpa"/>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="ndP-jc-hkh" secondAttribute="trailing" constant="30" id="yxC-Ro-7qb"/>
+                            <constraint firstItem="ZOu-VH-fDT" firstAttribute="trailing" secondItem="2b0-Fh-xZz" secondAttribute="trailing" constant="30" id="zEI-x2-fE6"/>
+                            <constraint firstItem="uLX-JH-TmX" firstAttribute="leading" secondItem="cPO-IY-HQs" secondAttribute="trailing" constant="-42" id="zPi-q7-oom"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZOu-VH-fDT"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="BdI-tP-WX2" id="ZlN-Uh-z9m"/>
+                        <outlet property="firstName" destination="ndP-jc-hkh" id="QHY-Ft-Igy"/>
+                        <outlet property="gender" destination="2b0-Fh-xZz" id="h1a-lk-HIY"/>
+                        <outlet property="lastName" destination="K9d-Fa-b4W" id="1hh-so-isM"/>
+                        <outlet property="password" destination="uLX-JH-TmX" id="W2K-ly-Mh5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dib-SH-LOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="W0I-ny-U5K" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1417.5" y="143.66197183098592"/>
+        </scene>
+    </scenes>
+</document>

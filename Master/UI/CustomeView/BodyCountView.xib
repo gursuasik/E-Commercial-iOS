@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BodyCountView" customModule="Master" customModuleProvider="target">
+            <connections>
+                <outlet property="body" destination="gL6-4l-Bqo" id="7hr-4L-75s"/>
+                <outlet property="count" destination="Pw9-2f-6mc" id="pdz-iB-ON8"/>
+                <outlet property="increment" destination="SWT-k0-bh2" id="LGV-SF-Qcj"/>
+                <outlet property="reduce" destination="MHK-Bw-xvr" id="L2o-E1-2Rf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gL6-4l-Bqo">
+                    <rect key="frame" x="8" y="3" width="84" height="24"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                    <state key="normal" title="Body Name"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHK-Bw-xvr">
+                    <rect key="frame" x="100" y="3" width="83.5" height="24"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                    <state key="normal" title="-"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWT-k0-bh2">
+                    <rect key="frame" x="283.5" y="3" width="83.5" height="24"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                    <state key="normal" title="+"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw9-2f-6mc">
+                    <rect key="frame" x="191.5" y="9" width="84" height="12"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MHK-Bw-xvr" firstAttribute="leading" secondItem="gL6-4l-Bqo" secondAttribute="trailing" constant="8" id="3f2-eZ-7Og"/>
+                <constraint firstItem="SWT-k0-bh2" firstAttribute="width" secondItem="Pw9-2f-6mc" secondAttribute="width" id="4gU-xk-Qst"/>
+                <constraint firstItem="SWT-k0-bh2" firstAttribute="leading" secondItem="Pw9-2f-6mc" secondAttribute="trailing" constant="8" id="8kd-Vp-o0n"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SWT-k0-bh2" secondAttribute="trailing" constant="8" id="Big-jk-yIW"/>
+                <constraint firstItem="Pw9-2f-6mc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JeW-F7-uSd"/>
+                <constraint firstItem="gL6-4l-Bqo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="L5V-C6-f3X"/>
+                <constraint firstItem="Pw9-2f-6mc" firstAttribute="leading" secondItem="MHK-Bw-xvr" secondAttribute="trailing" constant="8" id="Xgp-YD-7Ci"/>
+                <constraint firstItem="SWT-k0-bh2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dM6-Yv-IYp"/>
+                <constraint firstItem="MHK-Bw-xvr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nmY-A4-09Y"/>
+                <constraint firstItem="gL6-4l-Bqo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="q7c-Zn-D3R"/>
+                <constraint firstItem="MHK-Bw-xvr" firstAttribute="width" secondItem="gL6-4l-Bqo" secondAttribute="width" id="tyn-tP-Ugk"/>
+                <constraint firstItem="Pw9-2f-6mc" firstAttribute="width" secondItem="MHK-Bw-xvr" secondAttribute="width" id="z1e-4Q-nul"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
